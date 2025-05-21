@@ -1,4 +1,4 @@
-header {
+.header {
   margin-top: 36px;
 }
 
@@ -6,6 +6,7 @@ header {
   display: flex;
   justify-content: center; 
   align-items: center;
+  flex-wrap: wrap;
   background-color: #000000;
   padding: 16px 36px;
   font-family: var(--font-sans);
@@ -28,4 +29,10 @@ header {
   text-decoration: none;
   color: var(--foreground);
   transition: color 0.2s ease;
+}
+
+@media (max-width: 768px) {
+  .lista {
+    display: none;
+  }
 }
